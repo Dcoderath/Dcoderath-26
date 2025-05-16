@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./gridD.css";
+import "./GridD.css";
 import gsap from "gsap";
 
 import D1 from "../../assets/D/D1.jpg";
