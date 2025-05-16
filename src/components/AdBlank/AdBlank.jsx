@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import './AdBlank.css';
-import D8 from '../../assets/D/D8.svg';
+import D8 from '../../assets/D/d8.svg';
 
 const navItems = ['github', 'linkedin', 'Gmail', 'contact'];
 
