@@ -37,3 +37,14 @@ body, html {
   position: relative;
   overflow-x: hidden;
 }
+/* Hide D on large screens */
+.d-background {
+  display: none;
+}
+
+/* Show D only on small screens */
+@media (max-width: 480px) {
+  .d-background {
+    display: block;
+  }
+}

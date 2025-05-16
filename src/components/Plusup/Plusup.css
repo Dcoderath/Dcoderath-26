@@ -1,3 +1,4 @@
+/* Base Styles */
 .container {
   background-color: #ffffff;
 }
@@ -5,7 +6,7 @@
 /* Position pinned section relative to viewport */
 section.pinned {
   position: absolute;
-  top: 398vh; /* Adjust if needed */
+  top: 398vh;
   left: 7vw;
   width: 100%;
   height: 100vh;
@@ -40,8 +41,6 @@ section.pinned {
   height: 100%;
 }
 
-
-
 /* Lenis smooth scroll fixes */
 html.lenis,
 html.lenis body {
@@ -64,21 +63,14 @@ html.lenis body {
   pointer-events: none;
 }
 
-
 /* Responsive Media Queries Only */
 
-/* Small devices (max-width: 480px) */
+/* Small devices (max-width: 480px) - HIDE everything */
 @media only screen and (max-width: 480px) {
-  section.pinned {
-    top: 400vh;
-    left: 5vw;
-  }
-
+  .container,
+  section.pinned,
   .revealer {
-    left: 40%;
-    top: clamp(100px, 15vw, 150px);
-    width: clamp(80px, 20vw, 100px);
-    height: clamp(80px, 20vw, 100px);
+    display: none !important;
   }
 }
 

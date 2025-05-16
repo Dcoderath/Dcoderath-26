@@ -128,11 +128,12 @@ color: rgb(0, 238, 255);
 
   .unique-top,
   .unique-bottom {
-    font-size: clamp(20px, 5vw, 28px);
+    font-size: clamp(20px, 5vw, 89px);
   }
 
   .unique-middle {
-    font-size: clamp(28px, 7vw, 36px);
+    font-size: clamp(24px, 10vw, 64px);
+
   }
 
   .section-expertise-heading {

@@ -30,10 +30,10 @@ const Footer = () => {
         <div className="footer-container">
           <p>Imprint © 2025 dcoderath</p>
         </div>
-        <div className="footer-container">
-          3IXMOREVODKA STUDIO BOXHAGENER STRASSE 16 18245 BERLIN, GERMANY PHONE:
-          +49 (8) 38 / 7623183 INFO@5IXMOREVODKA.COM
-        </div>
+       <div className="footer-container">
+  Prajyaraj, Uttar Pradesh - 211001, INDIA | Email: trivedi2693@gmail.com
+</div>
+
         <div className="footer-container">Website By DECODERATH</div>
       </footer>
     </div>
