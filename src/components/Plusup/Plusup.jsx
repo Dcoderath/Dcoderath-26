@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from '@studio-freight/lenis';
-import './plusup.css';
+import './Plusup.css';
 import D from '../d/D';
 
 const Plusup = () => {
