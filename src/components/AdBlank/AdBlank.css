@@ -1,0 +1,146 @@
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+  border: none;
+}
+
+/* Container */
+.adblank {
+  position: relative;
+  width: 100vw;
+  height: 110vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent scrollbars */
+  padding: 0;
+}
+
+/* Menu Wrapper */
+.adblank__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+/* Menu Items */
+.adblank__item {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+/* Links */
+.adblank__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 15vh;
+  padding: 0 20px;
+  perspective: 800px;
+}
+
+/* Text Elements */
+.adblank-text {
+  display: inline-block;
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(3rem, 10vw, 10rem);
+  line-height: 1;
+  font-weight: 100;
+  font-style: normal;
+  color: #000;
+  text-transform: uppercase;
+  will-change: transform;
+}
+
+.adblank-text--front {
+  opacity: 0;
+}
+
+.adblank-text--bold {
+  font-weight: 100;
+}
+
+/* Fixed Banner */
+.adblank__banner {
+  position: absolute;
+  bottom: 60px;
+  left: -5vw;
+  width: 110vw;
+  height: 80px;
+  background-color: #222;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  transform-origin: bottom left;
+  transform: rotate(2deg);
+  overflow: hidden;
+  z-index: 10;
+}
+
+/* Banner Header */
+.adblank__banner-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 40px;
+  z-index: 2;
+}
+
+/* Banner Scrolling Track */
+.adblank__banner-track {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 10px 40px;
+  width: max-content;
+  opacity: 0.8;
+  animation: scroll-left 50s linear infinite;
+  z-index: 1;
+}
+
+/* Banner Items */
+.adblank__banner-item {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+
+/* Banner Text */
+.adblank__banner-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-right: 12px;
+}
+
+/* Banner Images */
+.adblank__banner-image {
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Scroll Left Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

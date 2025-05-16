@@ -1,0 +1,151 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+  background-color: #000000;
+  position: relative;
+}
+
+.navbar-left-text {
+    font-family: "Orbitron", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+    color: rgb(255, 255, 255);
+  font-size: 40px;
+ 
+}
+
+.navbar-right-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-vertical-line {
+  width: 2px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  margin-right: 10px;
+}
+.navbar-box {
+  width: 30px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  border-radius: 4px;
+}
+
+.navbar-expanded-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  z-index: 1000;
+  border-radius: 0;
+  /* no transition here */
+}
+
+/* Close button styles */
+.navbar-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 54px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0;
+  user-select: none;
+}
+
+.navbar-close-button:hover {
+  color: #ff4444;
+}
+/* ===== Responsive Enhancements for Navbar ===== */
+
+@media (max-width: 1024px) {
+  .navbar-left-text {
+    font-size: 2rem;
+  }
+
+  .navbar-box {
+    width: 28px;
+    height: 36px;
+  }
+
+  .navbar-vertical-line {
+    height: 35px;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 55px;
+  }
+
+  .navbar-left-text {
+    font-size: 1.8rem;
+  }
+
+  .navbar-box {
+    width: 26px;
+    height: 34px;
+  }
+
+  .navbar-vertical-line {
+    height: 30px;
+    margin-right: 6px;
+  }
+
+  .navbar-expanded-box {
+    width: 80vw;
+  }
+
+  .navbar-close-button {
+    font-size: 2.5rem;
+    top: 8px;
+    right: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-left-text {
+    font-size: 1.5rem;
+  }
+
+  .navbar-box {
+    width: 24px;
+    height: 32px;
+  }
+
+  .navbar-vertical-line {
+    height: 28px;
+    margin-right: 4px;
+  }
+
+  .navbar-container {
+    padding: 0 12px;
+    height: 50px;
+  }
+
+  .navbar-close-button {
+    font-size: 2rem;
+    top: 6px;
+    right: 6px;
+  }
+
+  .navbar-expanded-box {
+    width: 100vw;
+  }
+}
